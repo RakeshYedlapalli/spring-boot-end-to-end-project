@@ -1,0 +1,5 @@
+Advantages of Kafka:
+------------------
+High Throughput
+Fault tolerant (Replica set)
+High scalable
