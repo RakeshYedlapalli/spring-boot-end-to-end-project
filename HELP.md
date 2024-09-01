@@ -1,3 +1,9 @@
+# Application to build
+
+https://chat.openai.com/c/b296e3c9-2a9e-4098-9488-2c549eb953bc
+
+
+
 # Read Me First
 The following was discovered as part of building this project:
 

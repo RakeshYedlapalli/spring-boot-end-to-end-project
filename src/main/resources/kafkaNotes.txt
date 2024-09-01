@@ -3,3 +3,25 @@ Advantages of Kafka:
 High Throughput
 Fault tolerant (Replica set)
 High scalable
+Consumer group is mainly used for parallel processing, let's say, Multiple consumers can subscribe to one topic as a group
+which is also known as consumer group and kafka will make sure to send the messages only once to the consumer , which
+makes more fast readign the data
+
+
+Kafka commands
+---------------
+# Start the ZooKeeper service
+$ bin/zookeeper-server-start.sh config/zookeeper.properties
+
+# Start the Kafka broker service
+$ bin/kafka-server-start.sh config/server.properties
+
+
+# bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
+
+
+# bin/kafka-topics.sh --describe --topic quickstart-events --bootstrap-server localhost:9092
+
+# bin/kafka-console-producer.sh --topic user-details --bootstrap-server localhost:9092
+
+# bin/kafka-console-consumer.sh --topic user-details --from-beginning --bootstrap-server localhost:9092

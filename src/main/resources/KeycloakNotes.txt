@@ -1,0 +1,9 @@
+How to bring the Keycloak server up?
+
+# kc.sh start-dev
+
+Keyloak usernmae and password
+
+# username : admin
+# password : password
+
