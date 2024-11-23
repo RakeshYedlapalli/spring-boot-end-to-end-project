@@ -20,17 +20,22 @@ import java.util.concurrent.CompletableFuture;
 @CrossOrigin
 public class LoginController {
 
-    @Autowired
+//    @Autowired
     LoginService loginService;
 
-    @Autowired
+//    @Autowired
     UserDetailsRepository detailsRepository;
+
+    LoginController(LoginService loginService, UserDetailsRepository detailsRepository) {
+        this.loginService = loginService;
+        this.detailsRepository = detailsRepository;
+    }
 
 
     @PostMapping
     public ResponseEntity<UserRegistrationResponse> registerUser(@RequestBody UserDetailsDto userDetailsDto)
             throws JsonProcessingException {
-        System.out.println(detailsRepository.hashCode());
+//        System.out.println(detailsRepository.hashCode());
         UserDetailsDto dto = loginService.save(userDetailsDto);
 
         UserRegistrationResponse userRegistrationResponse;
@@ -71,7 +76,7 @@ public class LoginController {
         new Thread(() -> {
             // Simulating some asynchronous task
             try {
-                Thread.sleep(10000); // Simulating a delay
+                Thread.sleep(1); // Simulating a delay
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

@@ -7,3 +7,7 @@ Keyloak usernmae and password
 # username : admin
 # password : password
 
+application login credentials
+
+#username : rakesh
+#password : rakesh
