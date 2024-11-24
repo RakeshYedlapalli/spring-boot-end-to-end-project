@@ -8,7 +8,6 @@ import com.endtoend.springboot.ui.springbootendtoendapp.login.response.UserLogin
 import com.endtoend.springboot.ui.springbootendtoendapp.login.response.UserRegistrationResponse;
 import com.endtoend.springboot.ui.springbootendtoendapp.login.service.LoginService;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
